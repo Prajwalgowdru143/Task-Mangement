@@ -10,12 +10,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({
-  origin: "https://task-mangement-amber.vercel.app",  // Allow frontend URL
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  credentials: true,  // Allow cookies with requests
-}
-));
+app.use(cors());
 app.use(express.json());
 
 mongoose.connect(process.env.MONGODB_URI)
