@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://task-mangement-3emo.onrender.com';
 
 export const api = {
   signup: async (userData) => {
